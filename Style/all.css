@@ -1,0 +1,69 @@
+/** Styling for all pages */
+/*referenced w3schools **/
+body {
+  background-color: white;
+
+  animation-name:classic;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+
+  /*for safari*/
+  -webkit-animation-name: classic;
+  -webkit-animation-duration:10s;
+}
+  @-webkit-keyframes classic {
+    0% {background-color: white}
+    25% {background-color:rgb(255, 218, 246)}
+    75% {background-color: rgb(185, 221, 255)}
+    100% {background-color: white}
+  }
+
+  @keyframes classic {
+    0% {background-color: white}
+    25% {background-color:rgb(255, 218, 246)}
+    75% {background-color: rgb(185, 221, 255)}
+    100% {background-color: white}
+}
+
+p, h1, h2, h3, li {
+  font-family: "Josefin Sans", "Helvetica";
+}
+
+/** Nav bar styling */
+nav {
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navBar ul {
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+
+#navBar li {
+  display: inline-block;
+  padding: 2.5%;
+}
+
+#navBar li a {
+  text-decoration: none;
+  color: red;
+}
+
+/**index page styling */
+#welcome {
+  display: block;
+  text-align: center;
+}
+
+#intro {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
