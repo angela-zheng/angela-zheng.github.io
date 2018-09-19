@@ -1,7 +1,7 @@
 /** Styling for all pages */
 /*referenced w3schools **/
 body {
-  background-color: white;
+  background-color: black;
 
   animation-name:classic;
   animation-duration:5s;
@@ -11,6 +11,7 @@ body {
   -webkit-animation-name: classic;
   -webkit-animation-duration:10s;
 }
+/*
   @-webkit-keyframes classic {
     0% {background-color: white}
     25% {background-color:rgb(255, 218, 246)}
@@ -19,51 +20,79 @@ body {
   }
 
   @keyframes classic {
-    0% {background-color: white}
+    0% {background-color: black}
     25% {background-color:rgb(255, 218, 246)}
     75% {background-color: rgb(185, 221, 255)}
-    100% {background-color: white}
+    100% {background-color: black}
 }
-
+*/
 p, h1, h2, h3, li {
   font-family: "Josefin Sans", "Helvetica";
+  color: white;
 }
 
+svg {
+  margin: 2.5%;
+}
 /** Nav bar styling */
 nav {
-  width: 95%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 #navBar ul {
-  width: 85%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  flex: 5;
   text-align: right;
+  margin: auto;
+  padding-right: 4%;
+}
+
+#navBar img {
+  flex: 1;
+  max-width: 60px;
+  margin:2.75%;
 }
 
 #navBar li {
   display: inline-block;
-  padding: 2.5%;
-}
-
-#navBar li a {
+  padding: 2.0%;
   text-decoration: none;
-  color: red;
+  font-size: 14px;
 }
 
-/**index page styling */
-#welcome {
-  display: block;
-  text-align: center;
+#navBar li:hover {
+  color: pink;
 }
 
-#intro {
-  display: block;
+/* Process Section Styling */
+#process, #projects, #resume, #about {
+  display:none;
+}
+
+/* project page styling */
+/* project grid - refrenced w3schools */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+.col {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 30%;
+}
+
+#process {
+  width: 80%;
+  display: none;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  margin-top: 6%;
 }
