@@ -87,12 +87,5 @@ nav {
   margin-top: 8px;
   vertical-align: middle;
   max-width: 30%;
-}
-
-#process {
-  width: 80%;
-  display: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6%;
+  padding: 8px;
 }

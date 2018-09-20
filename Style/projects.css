@@ -1,0 +1,74 @@
+#projects {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.stepProject {
+  flex: 50%;
+  padding: 1%;
+}
+
+.stepProject img {
+  width: 100%;
+  border-radius: 4px;
+  border-color: white;
+  border:1px;
+}
+
+.stepProject1 {
+  flex: 1;
+  padding: 1%;
+}
+
+.stepProject2 {
+  flex: 4;
+  padding: 2%;
+}
+
+.icon {
+  max-width: 70px;
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+
+.sketch {
+  max-width: 350px;
+  padding: 1%;
+  border: 2px;
+  border-color:white;
+  border-radius:4px;
+}
+
+#lesFemmes {
+  display: none;
+  width: 80%;
+  margin: auto;
+}
+
+#Orchids {
+  display:none;
+  width: 80%;
+  margin:auto;
+}
+
+#fashion {
+  display:none;
+  width:80%;
+  margin:auto;
+}
+
+#fashionBtn {
+  border-radius: 30px;
+  border-color: black;
+  border: 5px;
+}
