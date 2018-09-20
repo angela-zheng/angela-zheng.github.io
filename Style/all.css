@@ -33,6 +33,15 @@ p, h1, h2, h3, li {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: lightpink;
+}
+
+a:hover{
+  color:pink;
+}
+
 svg {
   margin: 2.5%;
 }
