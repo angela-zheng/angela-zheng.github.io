@@ -72,3 +72,21 @@
   border-color: black;
   border: 5px;
 }
+
+#mgm {
+  display: none;
+  width:80%;
+  margin:auto;
+}
+
+#MGMBtn {
+  border-radius:30px;
+}
+
+#orchidsBtn {
+  background-color: lightpink;
+  border-radius:30px;
+  border-color:black;
+  border-width:100px;
+  max-width:245px;
+}

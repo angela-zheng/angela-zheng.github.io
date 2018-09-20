@@ -9,6 +9,7 @@ window.onload = function() {
   var lesFemmesPage = document.getElementById("lesFemmes");
   var orchidsPage = document.getElementById("Orchids");
   var fashionPage = document.getElementById("fashion");
+  var mgmPage = document.getElementById("mgm");
 
   document.getElementById("processBtn").addEventListener("click", function(){
     proc.style.display="block";
@@ -20,7 +21,7 @@ window.onload = function() {
     lesFemmesPage.style.display="none";
     orchidsPage.style.display="none";
     fashionPage.style.display="none";
-
+    mgmPage.style.display="none";
   });
 
   document.getElementById("projectsBtn").addEventListener("click", function(){
@@ -32,6 +33,7 @@ window.onload = function() {
     lesFemmesPage.style.display="none";
     orchidsPage.style.display="none";
     fashionPage.style.display="none";
+    mgmPage.style.display="none";
 
   });
 
@@ -44,6 +46,7 @@ window.onload = function() {
     lesFemmesPage.style.display="none";
     orchidsPage.style.display="none";
     fashionPage.style.display="none";
+    mgmPage.style.display="none";
 
   });
 
@@ -56,6 +59,7 @@ window.onload = function() {
     lesFemmesPage.style.display="none";
     orchidsPage.style.display="none";
     fashionPage.style.display="none";
+    mgmPage.style.display="none";
 
   });
 
@@ -68,6 +72,7 @@ window.onload = function() {
     lesFemmesPage.style.display="none";
     orchidsPage.style.display="none";
     fashionPage.style.display="none";
+    mgmPage.style.display="none";
 
   });
 
@@ -82,6 +87,7 @@ window.onload = function() {
     resume.style.display="none";
     orchidsPage.style.display="none";
     fashionPage.style.display="none";
+    mgmPage.style.display="none";
 
   });
 
@@ -94,11 +100,24 @@ window.onload = function() {
     projects.style.display="none";
     resume.style.display="none";
     fashionPage.style.display="none";
+    mgmPage.style.display="none";
 
   });
 
   document.getElementById("fashionBtn").addEventListener("click", function() {
     fashionPage.style.display="block";
+    lesFemmesPage.style.display="none";
+    proc.style.display="none";
+    home.style.display="none";
+    about.style.display="none";
+    projects.style.display="none";
+    resume.style.display="none";
+    mgmPage.style.display="none";
+
+  });
+
+  document.getElementById("MGMBtn").addEventListener("click", function(){
+    mgmPage.style.display="block";
     lesFemmesPage.style.display="none";
     proc.style.display="none";
     home.style.display="none";

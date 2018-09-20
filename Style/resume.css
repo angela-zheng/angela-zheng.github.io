@@ -1,0 +1,26 @@
+.experiences {
+  display:flex;
+  flex-direction:row;
+}
+
+.position {
+  flex:3;
+}
+
+.flexBox {
+  flex:1;
+}
+
+.place {
+  flex:1;
+  text-align: right;
+}
+
+.position p {
+  padding-left: 25px;
+}
+
+#resume {
+  width: 80%;
+  margin:auto;
+}
