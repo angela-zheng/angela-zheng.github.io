@@ -10,6 +10,8 @@ body {
   /*for safari*/
   -webkit-animation-name: classic;
   -webkit-animation-duration:10s;
+
+  margin-bottom: 120px;
 }
 /*
   @-webkit-keyframes classic {
