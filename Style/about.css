@@ -7,17 +7,66 @@
   width: 100%;
   margin: auto;
   max-width: 700px;
+  display: flex;
 }
 
 .me {
-  width: 50%;
-  max-width:350px;
-  float:left;
+  flex: 1;
+}
+.me img {
+  width: 95%;
+  max-width: 350px;
+  min-width: 200px;
 }
 
 .info_container {
-  width:50%;
-  max-width:300px;
-  float:left;
+  flex:1;
   margin-left:50px;
+}
+
+.interests_container {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dance_container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.video_container {
+  width: 95%;
+  display: block;
+}
+
+.luna_container {
+  width:95%;
+  display:flex;
+}
+
+.dog1 {
+  max-width: 350px;
+  flex:1;
+  padding: 10px;
+}
+
+.dog2 {
+  max-width:350px;
+  flex: 1;
+  padding:10px;
+}
+
+.horse1 {
+  max-width:350px;
+  flex: 1;
+  padding:10px;
+}
+
+.horse2 {
+  max-width:350px;
+  flex: 1;
+  padding:10px;
 }
