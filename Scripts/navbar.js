@@ -17,7 +17,6 @@ window.onload = function() {
     about.style.display="none";
     projects.style.display="none";
     resume.style.display="none";
-    processBtn.style.color="pink";
     lesFemmesPage.style.display="none";
     orchidsPage.style.display="none";
     fashionPage.style.display="none";
