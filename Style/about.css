@@ -69,8 +69,16 @@
   padding:10px;
 }
 
+.horse1 img {
+  max-width:350px;
+}
+
 .horse2 {
   max-width:350px;
   flex: 1;
   padding:10px;
+}
+
+.horse2 img {
+  max-width:350px;
 }
