@@ -116,11 +116,11 @@
 
 	html {
 		background-color:		_palette(accent2, bg);
-		background-attachment:	fixed,						fixed;
-		background-image:		url('images/overlay.png'),	url('../../images/bg.jpg');
-		background-position:	top left,					center center;
-		background-repeat:		repeat,						none;
-		background-size:		auto,						cover;
+		background-attachment:	fixed;
+		background-image:		linear-gradient(135deg, #0f1419 0%, #1a2032 50%, #0f1f2e 100%);
+		background-position:	top left;
+		background-repeat:		none;
+		background-size:		cover;
 	}
 
 	html {
@@ -373,6 +373,23 @@
 			15% { opacity: 1; z-index: _misc(z-index-base); }
 			99% { opacity: 0; z-index: _misc(z-index-base); }
 			100% { opacity: 0; z-index: -1; }
+		}
+
+	// SVG Signature Animation
+
+		@include keyframes('signature-draw') {
+			0% { stroke-dashoffset: 2000; }
+			100% { stroke-dashoffset: 0; }
+		}
+
+		path.sig {
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-width: 2;
+			fill: none;
+			stroke: url(#linear-gradient);
+			stroke-dasharray: 2000;
+			@include vendor('animation', 'signature-draw 3s ease-out infinite');
 		}
 
 	html {
@@ -815,7 +832,88 @@
 				}
 			}
 		}
+	}
 
+	/* Skills Grid */
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: _size(element-margin);
+		margin: _size(element-margin) 0;
+
+		@include breakpoint('<=small') {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.skill-category {
+		background: rgba(255, 255, 255, 0.03);
+		border: 1px solid _palette(border);
+		border-radius: 6px;
+		padding: 1.5em;
+		transition: all 0.3s ease;
+
+		&:hover {
+			background: rgba(0, 212, 255, 0.08);
+			border-color: rgba(0, 212, 255, 0.3);
+			transform: translateY(-2px);
+		}
+
+		h3 {
+			color: #00d4ff;
+			font-size: 1em;
+			margin: 0 0 0.75em 0;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+		}
+
+		p {
+			font-size: 0.95em;
+			line-height: 1.6;
+			color: _palette(fg-light);
+			margin: 0;
+		}
+	}
+
+	/* Contact Links */
+
+	.contact-links {
+		list-style: none;
+		padding: 0;
+		margin: _size(element-margin) 0;
+
+		li {
+			display: inline-block;
+			margin-right: 2em;
+			margin-bottom: 1em;
+
+			a {
+				display: inline-flex;
+				align-items: center;
+				text-decoration: none;
+				color: #00d4ff;
+				transition: all 0.2s ease;
+				font-weight: 500;
+
+				.fa-icon, .icon {
+					margin-right: 0.5em;
+					font-size: 1.2em;
+				}
+
+				&:hover {
+					color: #ffffff;
+					transform: translateX(2px);
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			li {
+				display: block;
+				margin-bottom: 1em;
+			}
+		}
 	}
 
 	dl {
